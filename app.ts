@@ -1,18 +1,24 @@
 namespace JiksaaEngine {
-    export class TestClass {
+    export class Ngine {
         private _count: number;
 
         public constructor(count: number) {
             this._count = count;
         }
 
-        public get Count(): number {
-            return this._count;
+        public start() : void {
+            this.loop();
+        }
+
+        public loop(): void {
+            // this._count++;
+            document.title = this._count.toString();
+            requestAnimationFrame(this.loop.bind(this));
         }
     }
 }
 
 window.onload = function() {
-    let test = new JiksaaEngine.TestClass(1);
-    console.log(`Instance value : ${test.Count}`);
+    let app = new JiksaaEngine.Ngine(0);
+    app.start();
 }
