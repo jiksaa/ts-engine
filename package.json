@@ -1,0 +1,32 @@
+{
+  "name": "jiksaa-engine",
+  "version": "0.0.1",
+  "description": "This is a default template engine",
+  "main": "index.html",
+  "bin": {
+    "jiksaa-engine": "app.js"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiksaa/ts-engine.git"
+  },
+  "author": "jbeersaerts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiksaa/ts-engine/issues"
+  },
+  "homepage": "https://github.com/jiksaa/ts-engine#readme",
+  "dependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.7",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.0.5"
+  }
+}
