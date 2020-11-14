@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "outDir": "bin/",
         "sourceMap": true,
+        "module": "commonjs"
     }
 }
